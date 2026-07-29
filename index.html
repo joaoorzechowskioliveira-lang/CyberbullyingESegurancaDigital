@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Seguro | Cyberbullying e Segurança Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <aside class="accessibility-bar" aria-label="Ferramentas de Acessibilidade">
+    <button id="btn-increase-font" title="Aumentar Fonte">A+</button>
+    <button id="btn-decrease-font" title="Diminuir Fonte">A-</button>
+    <button id="btn-contrast" title="Alternar Alto Contraste">◐ High Contrast</button>
+    <button id="btn-dark-mode" title="Alternar Modo Escuro">🌙 Modo Escuro</button>
+  </aside>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">🛡️ ConectaSeguro</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#escuta">Portal de Escuta</a></li>
+        <li><a href="#quiz">Quiz Interativo</a></li>
+        <li><a href="#referencias">Referências</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="hero-content fade-in">
+        <h1>Navegue com Segurança, Respeito e Empatia</h1>
+        <p class="welcoming-phrase">"Você não está sozinho no ambiente virtual. A internet deve ser um espaço seguro de conexão, aprendizado e respeito para todos."</p>
+      </div>
+
+      <div class="carousel-container">
+        <div class="carousel-slide active">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop" alt="Pessoas conectadas no mundo digital">
+          <p class="caption">Respeito e empatia em cada clique.</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop" alt="Segurança cibernética e proteção de dados">
+          <p class="caption">Proteja sua privacidade e seus dados.</p>
+        </div>
+        <div class="carousel-slide">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop" alt="Jovens reunidos e sorrindo">
+          <p class="caption">Juntos contra o cyberbullying.</p>
+        </div>
+        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="escuta" class="section-container">
+      <h2>Portal de Escuta e Acolhimento</h2>
+      <p class="section-desc">Precisa desabafar ou relatar uma situação? Este espaço é totalmente seguro e anônimo.</p>
+      
+      <div class="escuta-grid">
+        <form id="listening-form" class="card">
+          <h3>Envie sua mensagem</h3>
+          <div class="form-group">
+            <label for="name">Nome / Apelido (Opcional):</label>
+            <input type="text" id="name" placeholder="Como quer ser chamado(a)?">
+          </div>
+          <div class="form-group">
+            <label for="message">Sua mensagem ou relato:</label>
+            <textarea id="message" rows="5" required placeholder="Escreva aqui seu desabafo ou dúvida..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Enviar Mensagem</button>
+        </form>
+
+        <div class="guidance-card card">
+          <h3>Orientações e Canais de Ajuda</h3>
+          <ul>
+            <li><strong>Guarde provas:</strong> Tire prints de conversas, comentários e perfis.</li>
+            <li><strong>Bloqueie o agressor:</strong> Evite responder ou alimentar provações.</li>
+            <li><strong>Denuncie:</strong> Use as ferramentas das próprias redes sociais.</li>
+            <li><strong>Procure ajuda:</strong> Fale com pais, responsáveis ou professores de confiança.</li>
+            <li><strong>SaferNet Brasil:</strong> <a href="https://new.safernet.org.br" target="_blank" rel="noopener">safernet.org.br</a> (Denúncias e ajuda online).</li>
+            <li><strong>CVV (Apoio Emocional):</strong> Ligue 188.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="response-box" class="response-box hidden"></div>
+    </section>
+
+    <section id="quiz" class="section-container">
+      <h2>Quiz: O que fazer nessa situação?</h2>
+      <p class="section-desc">Teste seus conhecimentos e saiba como agir perante o cyberbullying.</p>
+      
+      <div id="quiz-card" class="card quiz-card">
+        <div id="quiz-header">
+          <span id="quiz-progress">Pergunta 1 de 5</span>
+          <h3 id="quiz-question">Carregando pergunta...</h3>
+        </div>
+        <div id="quiz-options" class="options-container"></div>
+        <div id="quiz-feedback" class="feedback-box hidden"></div>
+        <button id="btn-next-question" class="btn-primary hidden">Próxima Pergunta</button>
+      </div>
+    </section>
+
+    <section id="referencias" class="section-container">
+      <h2>Referências e Leituras Recomendadas</h2>
+      <ul class="references-list card">
+        <li><strong>SaferNet Brasil:</strong> Portal de conscientização e combate a crimes cibernéticos.</li>
+        <li><strong>UNICEF Brasil:</strong> Guias de segurança na internet para adolescentes e famílias.</li>
+        <li><strong>Lei nº 13.185/2015:</strong> Programa de Combate à Intimidação Sistemática (Bullying e Cyberbullying no Brasil).</li>
+        <li><strong>InternetLab:</strong> Pesquisas sobre direitos digitais e diversidade online.</li>
+      </ul>
+    </section>
+  </main>
+
+  <button id="btn-back-to-top" title="Voltar ao topo">↑ Topo</button>
+
+  <footer>
+    <p>&copy; 2026 ConectaSeguro. Projeto Educativo sobre Segurança Digital.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
