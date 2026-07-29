@@ -1,123 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conecta Seguro | Cyberbullying e Segurança Digital</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Voz Importa | Combate ao Cyberbullying e Segurança Digital</title>
+    <meta name="description" content="Plataforma de acolhimento, orientação e conscientização sobre cyberbullying e segurança digital.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <aside class="accessibility-bar" aria-label="Ferramentas de Acessibilidade">
-    <button id="btn-increase-font" title="Aumentar Fonte">A+</button>
-    <button id="btn-decrease-font" title="Diminuir Fonte">A-</button>
-    <button id="btn-contrast" title="Alternar Alto Contraste">◐ High Contrast</button>
-    <button id="btn-dark-mode" title="Alternar Modo Escuro">🌙 Modo Escuro</button>
-  </aside>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-shield-halved"></i> EscudoDigital
+            </a>
 
-  <header>
-    <nav class="navbar">
-      <div class="logo">🛡️ ConectaSeguro</div>
-      <ul class="nav-links">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#escuta">Portal de Escuta</a></li>
-        <li><a href="#quiz">Quiz Interativo</a></li>
-        <li><a href="#referencias">Referências</a></li>
-      </ul>
-    </nav>
-  </header>
+            <nav class="nav-menu">
+                <a href="#hero">Início</a>
+                <a href="#escuta">Portal de Escuta</a>
+                <a href="#carrossel-section">Conscientização</a>
+                <a href="#quiz">Quiz Interativo</a>
+                <a href="#faq">Dúvidas</a>
+                <a href="#referencias">Canais de Apoio</a>
+            </nav>
 
-  <main>
-    <section id="inicio" class="hero-section">
-      <div class="hero-content fade-in">
-        <h1>Navegue com Segurança, Respeito e Empatia</h1>
-        <p class="welcoming-phrase">"Você não está sozinho no ambiente virtual. A internet deve ser um espaço seguro de conexão, aprendizado e respeito para todos."</p>
-      </div>
-
-      <div class="carousel-container">
-        <div class="carousel-slide active">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop" alt="Pessoas conectadas no mundo digital">
-          <p class="caption">Respeito e empatia em cada clique.</p>
+            <div class="accessibility-toolbar">
+                <button id="btn-dec-font" class="acc-btn" title="Diminuir Fonte" aria-label="Diminuir Fonte">A-</button>
+                <button id="btn-inc-font" class="acc-btn" title="Aumentar Fonte" aria-label="Aumentar Fonte">A+</button>
+                <button id="btn-contrast" class="acc-btn" title="Alto Contraste" aria-label="Alto Contraste">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </button>
+                <button id="btn-dark-mode" class="acc-btn" title="Alternar Modo Escuro" aria-label="Modo Escuro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
         </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop" alt="Segurança cibernética e proteção de dados">
-          <p class="caption">Proteja sua privacidade e seus dados.</p>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <span class="badge">Acolhimento &amp; Proteção 24h</span>
+                    <h1 class="hero-title">Sua voz tem poder. Você nunca está só no ambiente digital.</h1>
+                    <p class="hero-subtitle">
+                        O cyberbullying deixa marcas reais, mas você não precisa atravessar isso sem apoio. Oferecemos um espaço seguro de escuta, orientações jurídicas e estratégias de segurança cibernética.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#escuta" class="btn btn-primary"><i class="fa-solid fa-heart"></i> Preciso de Acolhimento</a>
+                        <a href="#quiz" class="btn btn-secondary"><i class="fa-solid fa-gamepad"></i> Teste Seus Conhecimentos</a>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="hero-card-decoration">
+                        <i class="fa-solid fa-user-shield hero-icon"></i>
+                        <h3>Ambiente Seguro &amp; Anônimo</h3>
+                        <p>Respeitamos sua privacidade e oferecemos o direcionamento correto para proteger sua dignidade e saúde mental.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="escuta" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Portal de Escuta Segura</h2>
+                    <p>Espaço confidencial para desabafo, orientação e acolhimento imediato.</p>
+                </div>
+
+                <div class="escuta-grid">
+                    <div class="card escuta-form-card">
+                        <h3><i class="fa-solid fa-paper-plane"></i> Envie seu Relato ou Dúvida</h3>
+                        <form id="form-escuta" class="form-escuta">
+                            <div class="form-group">
+                                <label for="nome">Como gostaria de ser chamado(a)? (Opcional)</label>
+                                <input type="text" id="nome" placeholder="Ex: Anônimo ou seu Apelido" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="situacao">O que está acontecendo?</label>
+                                <select id="situacao" class="form-control" required>
+                                    <option value="" disabled selected>Selecione a categoria</option>
+                                    <option value="ofensas">Ofensas e Discurso de Ódio</option>
+                                    <option value="vazamento">Vazamento de Fotos / Dados Pessoais</option>
+                                    <option value="perfil_falso">Criação de Perfil Falso (Fake)</option>
+                                    <option value="ameacas">Ameaças e Chantagens (Chantagem Digital)</option>
+                                    <option value="outro">Outra situação de violência cibernética</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensagem">Descreva a situação com suas palavras:</label>
+                                <textarea id="mensagem" rows="5" class="form-control" required placeholder="Escreva aqui com tranquilidade. Este canal é seguro..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-envelope-open-text"></i> Receber Mensagem de Apoio</button>
+                        </form>
+                    </div>
+
+                    <div class="card escuta-response-card" id="card-resposta">
+                        <div id="resposta-default" class="resposta-placeholder">
+                            <i class="fa-solid fa-comments"></i>
+                            <h4>Acolhimento Instantâneo</h4>
+                            <p>Preencha o formulário ao lado para receber orientações práticas e uma mensagem personalizada de acolhimento.</p>
+                        </div>
+                        <div id="resposta-dinamica" class="resposta-content hidden">
+                            </div>
+                    </div>
+                </div>
+
+                <div class="orientacoes-grid">
+                    <div class="card card-info">
+                        <i class="fa-solid fa-camera-retro info-icon"></i>
+                        <h4>1. Produza Provas</h4>
+                        <p>Tire capturas de tela (screenshots) que exibam data, hora, link da página e o nome de usuário do agressor.</p>
+                    </div>
+                    <div class="card card-info">
+                        <i class="fa-solid fa-ban info-icon"></i>
+                        <h4>2. Bloqueie e Denuncie</h4>
+                        <p>Não responda às provocações. Utilize as ferramentas de denúncia das próprias redes sociais e bloqueie o perfil.</p>
+                    </div>
+                    <div class="card card-info">
+                        <i class="fa-solid fa-file-contract info-icon"></i>
+                        <h4>3. Registre em Cartório / Notarial</h4>
+                        <p>Para validade jurídica formal, faça uma Ata Notarial em cartório ou preserve o código-fonte da página afetada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrossel-section" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pilares da Segurança e Empatia Digital</h2>
+                    <p>Navegue pelos cards para aprender diretrizes essenciais de convivência online.</p>
+                </div>
+
+                <div class="carousel-container">
+                    <button id="carousel-prev" class="carousel-nav-btn" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel-track-wrapper">
+                        <div id="carousel-track" class="carousel-track">
+                            </div>
+                    </div>
+                    <button id="carousel-next" class="carousel-nav-btn" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div id="carousel-dots" class="carousel-dots"></div>
+            </div>
+        </section>
+
+        <section id="quiz" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Quiz: O que fazer nessa situação?</h2>
+                    <p>Avalie suas reações diante de cenários reais de cyberbullying e ameaças virtuais.</p>
+                </div>
+
+                <div class="quiz-box card">
+                    <div id="quiz-header" class="quiz-header">
+                        <span id="quiz-progress" class="quiz-progress">Pergunta 1 de 5</span>
+                        <div class="progress-bar-bg">
+                            <div id="quiz-progress-fill" class="progress-bar-fill"></div>
+                        </div>
+                    </div>
+
+                    <div id="quiz-body" class="quiz-body">
+                        </div>
+
+                    <div id="quiz-footer" class="quiz-footer hidden">
+                        <button id="quiz-next-btn" class="btn btn-primary">Próxima Pergunta <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Perguntas Frequentes &amp; Aspectos Legais</h2>
+                    <p>Esclareça dúvidas comuns sobre direitos, leis brasileiras e proteção cibernética.</p>
+                </div>
+
+                <div id="accordion-container" class="accordion-container">
+                    </div>
+            </div>
+        </section>
+
+        <section id="referencias" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Canais Oficiais de Apoio e Referências</h2>
+                    <p>Em caso de emergência ou violação de direitos, procure imediatamente estas instituições parceiras.</p>
+                </div>
+
+                <div class="referencias-grid">
+                    <a href="https://new.safernet.org.br/" target="_blank" rel="noopener" class="card ref-card">
+                        <div class="ref-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>SaferNet Brasil</h3>
+                        <p>Central de denúncias de crimes cibernéticos e canal de ajuda para jovens e famílias.</p>
+                        <span class="ref-link">Acessar SaferNet <i class="fa-solid fa-external-link"></i></span>
+                    </a>
+
+                    <a href="https://cvv.org.br/" target="_blank" rel="noopener" class="card ref-card">
+                        <div class="ref-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <h3>CVV - Centro de Valorização da Vida</h3>
+                        <p>Apoio emocional e prevenção do suicídio. Atendimento gratuito e confidencial pelo número 188.</p>
+                        <span class="ref-link">Ligue 188 / Acesse o Chat <i class="fa-solid fa-external-link"></i></span>
+                    </a>
+
+                    <a href="https://www.gov.br/mdh/pt-br/assuntos/denuncie-violencia-dos-direitos-humanos" target="_blank" rel="noopener" class="card ref-card">
+                        <div class="ref-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                        <h3>Disque Direitos Humanos - Disque 100</h3>
+                        <p>Serviço público para denúncia de violações de direitos humanos de crianças e adolescentes.</p>
+                        <span class="ref-link">Saiba Mais <i class="fa-solid fa-external-link"></i></span>
+                    </a>
+
+                    <a href="https://www.unicef.org/brazil/internet-sem-vacilo" target="_blank" rel="noopener" class="card ref-card">
+                        <div class="ref-icon"><i class="fa-solid fa-shield-cat"></i></div>
+                        <h3>UNICEF Brasil</h3>
+                        <p>Iniciativa "Internet Sem Vacilo" com materiais educativos sobre cidadania digital.</p>
+                        <span class="ref-link">Acessar Recursos <i class="fa-solid fa-external-link"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 EscudoDigital. Todos os direitos reservados. Projeto sem fins lucrativos voltado à conscientização e segurança digital.</p>
+            <div class="footer-links">
+                <a href="#hero">Início</a>
+                <a href="#escuta">Acolhimento</a>
+                <a href="#referencias">Referências</a>
+            </div>
         </div>
-        <div class="carousel-slide">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&auto=format&fit=crop" alt="Jovens reunidos e sorrindo">
-          <p class="caption">Juntos contra o cyberbullying.</p>
-        </div>
-        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
-      </div>
-    </section>
+    </footer>
 
-    <section id="escuta" class="section-container">
-      <h2>Portal de Escuta e Acolhimento</h2>
-      <p class="section-desc">Precisa desabafar ou relatar uma situação? Este espaço é totalmente seguro e anônimo.</p>
-      
-      <div class="escuta-grid">
-        <form id="listening-form" class="card">
-          <h3>Envie sua mensagem</h3>
-          <div class="form-group">
-            <label for="name">Nome / Apelido (Opcional):</label>
-            <input type="text" id="name" placeholder="Como quer ser chamado(a)?">
-          </div>
-          <div class="form-group">
-            <label for="message">Sua mensagem ou relato:</label>
-            <textarea id="message" rows="5" required placeholder="Escreva aqui seu desabafo ou dúvida..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary">Enviar Mensagem</button>
-        </form>
+    <button id="btn-top" class="btn-top" title="Voltar ao topo" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-        <div class="guidance-card card">
-          <h3>Orientações e Canais de Ajuda</h3>
-          <ul>
-            <li><strong>Guarde provas:</strong> Tire prints de conversas, comentários e perfis.</li>
-            <li><strong>Bloqueie o agressor:</strong> Evite responder ou alimentar provações.</li>
-            <li><strong>Denuncie:</strong> Use as ferramentas das próprias redes sociais.</li>
-            <li><strong>Procure ajuda:</strong> Fale com pais, responsáveis ou professores de confiança.</li>
-            <li><strong>SaferNet Brasil:</strong> <a href="https://new.safernet.org.br" target="_blank" rel="noopener">safernet.org.br</a> (Denúncias e ajuda online).</li>
-            <li><strong>CVV (Apoio Emocional):</strong> Ligue 188.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="response-box" class="response-box hidden"></div>
-    </section>
-
-    <section id="quiz" class="section-container">
-      <h2>Quiz: O que fazer nessa situação?</h2>
-      <p class="section-desc">Teste seus conhecimentos e saiba como agir perante o cyberbullying.</p>
-      
-      <div id="quiz-card" class="card quiz-card">
-        <div id="quiz-header">
-          <span id="quiz-progress">Pergunta 1 de 5</span>
-          <h3 id="quiz-question">Carregando pergunta...</h3>
-        </div>
-        <div id="quiz-options" class="options-container"></div>
-        <div id="quiz-feedback" class="feedback-box hidden"></div>
-        <button id="btn-next-question" class="btn-primary hidden">Próxima Pergunta</button>
-      </div>
-    </section>
-
-    <section id="referencias" class="section-container">
-      <h2>Referências e Leituras Recomendadas</h2>
-      <ul class="references-list card">
-        <li><strong>SaferNet Brasil:</strong> Portal de conscientização e combate a crimes cibernéticos.</li>
-        <li><strong>UNICEF Brasil:</strong> Guias de segurança na internet para adolescentes e famílias.</li>
-        <li><strong>Lei nº 13.185/2015:</strong> Programa de Combate à Intimidação Sistemática (Bullying e Cyberbullying no Brasil).</li>
-        <li><strong>InternetLab:</strong> Pesquisas sobre direitos digitais e diversidade online.</li>
-      </ul>
-    </section>
-  </main>
-
-  <button id="btn-back-to-top" title="Voltar ao topo">↑ Topo</button>
-
-  <footer>
-    <p>&copy; 2026 ConectaSeguro. Projeto Educativo sobre Segurança Digital.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
