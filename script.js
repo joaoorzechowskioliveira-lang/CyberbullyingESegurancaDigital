@@ -52,17 +52,17 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             icon: "fa-solid fa-brain",
             title: "Pense Antes de Compartilhar",
-            description: "Informações, imagens ou conteúdos íntimos compartilhados sem autorização geram impactos psicológicos devastadores e permanentes."
+            description: "Informações, imagens ou conteúdos íntimos compartilhados sem autorização podem gerar impactos psicológicos devastadores e permanentes."
         },
         {
             icon: "fa-solid fa-lock",
             title: "Fortaleça suas Senhas e Privacidade",
-            description: "Utilize autenticação em dois fatores (2FA) e configure o nível de privacidade das suas redes para apenas amigos próximos."
+            description: "Utilize autenticação em duas etapas (2FA) e configure o nível de privacidade das suas redes para apenas amigos próximos."
         },
         {
             icon: "fa-solid fa-hands-holding-child",
             title: "Pratique a Empatia Digital",
-            description: "Atrás de cada perfil existe uma pessoa real com sentimentos. Não dissemine comentários com conteúdos de ódio ou sarcasmo destrutivo."
+            description: "Atrás de cada perfil existe uma pessoa real com sentimentos. Não faça comentários de ódio ou sarcasmo destrutivo."
         },
         {
             icon: "fa-solid fa-gavel",
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         respostaDinamica.innerHTML = `
             <h4>Olá, ${nome}. Estamos com você.</h4>
-            <p>Obrigado por ter a coragem de compartilhar seu relato conosco. Saiba que sua dor é válida e você não está só.</p>
+            <p>Obrigado por ter a coragem de compartilhar seu relato conosco. Saiba que sua dor é válida e você não está sozinho nessa.</p>
             
             <div class="quote-box">
                 <i class="fa-solid fa-quote-left"></i> ${fraseAleatoria}
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Ameaçar a pessoa de volta com agressão física."
             ],
             correct: 2,
-            explanation: "Chantagem e extorsão são crimes graves. Nunca ceda, pois as exigências continuam. Guarde o histórico e denuncie às autoridades."
+            explanation: "Chantagem e extorsão são crimes graves. Nunca ceda, pois as exigências continuam. Salve provas, guarde o histórico e denuncie às autoridades."
         },
         {
             question: "4. Qual é a utilidade da 'Ata Notarial' feita em Cartório no contexto do cyberbullying?",
