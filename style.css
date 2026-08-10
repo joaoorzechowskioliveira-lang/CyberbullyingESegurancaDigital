@@ -103,6 +103,7 @@ body.dark-mode .header {
     padding-top: 1rem;
     padding-bottom: 1rem;
     gap: 1rem;
+    max-width: 100%;
 }
 
 .logo {
