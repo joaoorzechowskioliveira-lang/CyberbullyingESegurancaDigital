@@ -3,18 +3,18 @@
    ========================================================================== */
 :root {
     /* Paleta de Cores Modo Claro */
-    --primary-color: #2563eb;
-    --primary-hover: #1d4ed8;
-    --secondary-color: #7c3aed;
-    --accent-color: #06b6d4;
-    --bg-color: #f8fafc;
+    --primary-color: #eb8525;
+    --primary-hover: #d8b61d;
+    --secondary-color: #c0ed3a;
+    --accent-color: #d49606;
+    --bg-color: #fcfcf8;
     --bg-alt: #ffffff;
     --card-bg: #ffffff;
-    --text-color: #0f172a;
-    --text-muted: #475569;
-    --border-color: #e2e8f0;
+    --text-color: #2a1c0f;
+    --text-muted: #695a47;
+    --border-color: #e2f0e7;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 15px 35px rgba(37, 99, 235, 0.15);
+    --shadow-hover: 0 15px 35px rgba(235, 222, 37, 0.15);
     
     /* Configurações Tipográficas e de Layout */
     --font-main: 'Poppins', sans-serif;
@@ -25,12 +25,12 @@
 
 /* Modo Escuro */
 body.dark-mode {
-    --bg-color: #0f172a;
-    --bg-alt: #1e293b;
-    --card-bg: #1e293b;
-    --text-color: #f8fafc;
+    --bg-color: #2a2a0f;
+    --bg-alt: #393b1e;
+    --card-bg: #333b1e;
+    --text-color: #fcfbf8;
     --text-muted: #cbd5e1;
-    --border-color: #334155;
+    --border-color: #554c33;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
