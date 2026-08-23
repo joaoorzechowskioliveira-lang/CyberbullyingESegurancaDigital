@@ -43,6 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.body.classList.contains('high-contrast')) {
             document.body.classList.remove('dark-mode');
         }
+        // Mudar o logo entre claro e escuro
+    const logoImg = document.getElementById('logo-img')
+    if (document.body.classList.contains('high-contrast')) {
+    logoImg.src = 'img/logoescuro.png';
+} else {
+    logoImg.src = 'img/logoclaro.png';
+}
     });
 
     // Alternar Modo Escuro
@@ -51,6 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.body.classList.contains('dark-mode')) {
             document.body.classList.remove('high-contrast');
         }
+        // Mudar o logo entre claro e escuro
+    const logoImg = document.getElementById('logo-img')
+    if (document.body.classList.contains('dark-mode')) {
+    logoImg.src = 'img/logoescuro.png';
+} else {
+    logoImg.src = 'img/logoclaro.png';
+}
     });
 
     /* ==========================================================================
