@@ -3,15 +3,15 @@
    ========================================================================== */
 :root {
     /* Paleta de Cores Modo Claro */
-    --primary-color: #e97852;
-    --primary-hover: #d28e56;
+    --primary-color: #e9af52;
+    --primary-hover: #d2a356;
     --secondary-color: #f1ba68;
-    --accent-color: #d0a645;
+    --accent-color: #d3b12b;
     --bg-color: #fcfaf8;
     --bg-alt: #ffffff;
     --card-bg: #ffffff;
-    --text-color: #2a160f;
-    --text-muted: #695447;
+    --text-color: #2a230f;
+    --text-muted: #696347;
     --border-color: #e6f0e2;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --shadow-hover: 0 15px 35px rgba(235, 156, 37, 0.15);
@@ -25,12 +25,12 @@
 
 /* Modo Escuro */
 body.dark-mode {
-    --bg-color: #2a1a0f;
-    --bg-alt: #3b2a1e;
-    --card-bg: #3b271e;
+    --bg-color: #2a1f0f;
+    --bg-alt: #3b351e;
+    --card-bg: #3b341e;
     --text-color: #fcfaf8;
     --text-muted: #cbe1d9;
-    --border-color: #553f33;
+    --border-color: #554f33;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
