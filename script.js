@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const frasesMotivacionais = [
         "A sua dignidade não pode ser definida por palavras atiradas na internet.",
-        "Pedir ajuda não é sinal de fraqueza; é o primeiro ato de coragem para mudar a situação.",
+        "Pedir ajuda não é sinal de fraqueza, converse com um amigo, responsável ou professor.",
         "Você é muito maior do que qualquer agressão ou comentário maldoso.",
         "O ambiente virtual passa, mas sua integridade e seu valor permanecem intactos."
     ];
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <li>Guarde o link completo da página e faça capturas de tela (Print Screen).</li>
                 <li>Não responda ao agressor nem busque vingança no ambiente virtual.</li>
                 <li>Reporte a conta na própria plataforma e converse com alguém de sua confiança (familiares, professores ou psicólogos).</li>
-                <li>Caso sinta necessidade, procure a Delegacia de Crimes Cibernéticos da sua região.</li>
+                <li>Caso sinta necessidade, procure a 14º Subdivisão Policial de Guarapuava.</li>
             </ul>
 
             <button onclick="resetEscuta()" class="btn btn-secondary" style="margin-top: 1rem; font-size: 0.9rem;">
