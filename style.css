@@ -3,10 +3,10 @@
    ========================================================================== */
 :root {
     /* Paleta de Cores Modo Claro */
-    --primary-color: #eb5625;
-    --primary-hover: #d8711d;
-    --secondary-color: #eda53a;
-    --accent-color: #d49606;
+    --primary-color: #e97852;
+    --primary-hover: #d28e56;
+    --secondary-color: #f1ba68;
+    --accent-color: #d0a645;
     --bg-color: #fcfaf8;
     --bg-alt: #ffffff;
     --card-bg: #ffffff;
@@ -25,12 +25,12 @@
 
 /* Modo Escuro */
 body.dark-mode {
-    --bg-color: #2a220f;
-    --bg-alt: #3b341e;
-    --card-bg: #3b391e;
+    --bg-color: #2a1a0f;
+    --bg-alt: #3b2a1e;
+    --card-bg: #3b271e;
     --text-color: #fcfaf8;
     --text-muted: #cbe1d9;
-    --border-color: #554833;
+    --border-color: #553f33;
     --shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
