@@ -11,14 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnContrast = document.getElementById('btn-contrast');
     const btnDarkMode = document.getElementById('btn-dark-mode');
 
-    // Mudar o logo entre claro e escuro
-    const logoImg = document.getElementById('logo-img')
-    if (document.body.classList.contains('dark-mode')) {
-    logoImg.src = 'img/logoescuro.png';
-} else {
-    logoImg.src = 'img/logoclaro.png';
-}
-
     // Aumentar fonte com validação restrita entre 12px e 24px
     btnIncFont.addEventListener('click', () => {
         let novaFonte = currentFontSize + 2;
