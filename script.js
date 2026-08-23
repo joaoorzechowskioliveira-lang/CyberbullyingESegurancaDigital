@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mudar o logo entre claro e escuro
     const logoImg = document.getElementById('logo')
-    if (document.body.classList.contains('dark-mode') or document.body.classList.contains('high-contrast')) {
+    if (document.body.classList.contains('dark-mode')) {
     logoImg.src = 'img/logoescuro.png';
 } else {
     logoImg.src = 'img/logoclaro.png';
