@@ -132,6 +132,7 @@ body.dark-mode .header {
     font-size: 0.95rem;
     transition: var(--transition);
     white-space: nowrap;
+    text-align: right;
 }
 
 .nav-menu a:hover {
