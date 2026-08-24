@@ -117,6 +117,7 @@ body.dark-mode .header {
     align-items: center;
     gap: clamp(0.8rem, 1.5vw, 1.8rem);
     flex-shrink: 0;
+    text-align: left;
 }
 
 .nav-menu {
