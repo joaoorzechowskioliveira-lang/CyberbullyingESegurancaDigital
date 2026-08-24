@@ -118,6 +118,7 @@ body.dark-mode .header {
     gap: clamp(0.8rem, 1.5vw, 1.8rem);
     flex-shrink: 0;
     text-align: left;
+    font-size: 100% !important; 
 }
 
 .nav-menu {
