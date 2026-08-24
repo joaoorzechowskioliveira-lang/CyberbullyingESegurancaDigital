@@ -115,7 +115,7 @@ body.dark-mode .header {
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: clamp(0.8rem, 1.5vw, 1.8rem);
     flex-shrink: 0;
 }
 
